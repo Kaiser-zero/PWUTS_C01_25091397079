@@ -1,0 +1,46 @@
+<section class="katalog" aria-labelledby="judulKatalog">
+    <h2 id="judulKatalog">Katalog Sports Car</h2>
+    <p class="deskripsi-mobil">Temukan sports car impianmu.</p>
+
+    <div class="filter-mobil">
+        <label class="sr-only" for="cariMobil">Cari mobil</label>
+        <input type="search" id="cariMobil" placeholder="Cari sports car..." autocomplete="off">
+        <label class="sr-only" for="filterHarga">Filter harga</label>
+        <select id="filterHarga">
+            <option value="">Semua Harga</option>
+            <option value="terendah">Maksimal Rp7 juta/hari</option>
+            <option value="tertinggi">Di atas Rp7 juta/hari</option>
+        </select>
+    </div>
+
+    <div class="daftar-mobil" id="daftarKatalog">
+        <article class="kartu-mobil" data-nama="honda civic fl5 type r civic" data-harga="7000000">
+            <img src="Civic Type R.jpeg" alt="Honda Civic FL5 Type R" loading="lazy">
+            <div class="info-mobil">
+                <h3>Honda Civic FL5 Type R</h3>
+                <p>Sports car berperforma tinggi dengan desain sporty.</p>
+                <p class="harga">Rp7.000.000 <span>/hari</span></p>
+                <a href="pemesanan.html" class="tombol" data-pesan-mobil="civic">Pesan Sekarang</a>
+            </div>
+        </article>
+        <article class="kartu-mobil" data-nama="acura nsx 2017" data-harga="9000000">
+            <img src="2017 Acura NSX.jpeg" alt="2017 Acura NSX" loading="lazy">
+            <div class="info-mobil">
+                <h3>Acura NSX 2017</h3>
+                <p>Sports car dengan karakter premium dan desain aerodinamis.</p>
+                <p class="harga">Rp9.000.000 <span>/hari</span></p>
+                <a href="pemesanan.html" class="tombol" data-pesan-mobil="acura">Pesan Sekarang</a>
+            </div>
+        </article>
+        <article class="kartu-mobil" data-nama="chevrolet corvette 2023" data-harga="12000000">
+            <img src="2023 Chevrolet Corvette.jpeg" alt="2023 Chevrolet Corvette" loading="lazy">
+            <div class="info-mobil">
+                <h3>Chevrolet Corvette 2023</h3>
+                <p>Sports car bertenaga dengan tampilan khas mobil performa.</p>
+                <p class="harga">Rp12.000.000 <span>/hari</span></p>
+                <a href="pemesanan.html" class="tombol" data-pesan-mobil="chevrolet">Pesan Sekarang</a>
+            </div>
+        </article>
+    </div>
+    <p id="pesanKosong" role="status" hidden>Mobil tidak ditemukan. Coba kata kunci atau filter harga lain.</p>
+</section>

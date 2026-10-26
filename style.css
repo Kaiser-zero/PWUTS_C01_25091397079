@@ -1,0 +1,512 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fb;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+header {
+    background-color: #4e0c20;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 9px 13px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ffb347;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer {
+    padding: 22px 6%;
+    background-color: #250811;
+    color: #f8e9ed;
+    text-align: center;
+}
+
+
+.hero {
+    background: linear-gradient(135deg, #43101e, #a62525);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #f8e9ed;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #ff9f1c;
+    color: #43200b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background-color: #ffc15e;
+    transform: translateY(-2px);
+}
+
+
+.keunggulan {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.keunggulan h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.daftar-keunggulan {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.daftar-keunggulan article {
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    border: 1px solid #edf0f5;
+    box-shadow: 0 5px 18px rgba(30, 41, 59, 0.06);
+    transition: 0.3s;
+}
+
+.daftar-keunggulan article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.1);
+}
+
+.daftar-keunggulan h3 {
+    margin-bottom: 10px;
+    color: #a62525;
+}
+
+
+.katalog {
+    min-height: 70vh;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.katalog > h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #43101c;
+}
+
+.katalog > p {
+    color: #64748b;
+}
+
+.filter-mobil {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.filter-mobil input,
+.filter-mobil select {
+    width: 100%;
+    max-width: 320px;
+    padding: 13px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 15px;
+    color: #1e293b;
+    outline: none;
+    transition: 0.2s;
+}
+
+.filter-mobil input:focus,
+.filter-mobil select:focus {
+    border-color: #a62525;
+    box-shadow: 0 0 0 3px rgba(166, 37, 37, 0.1);
+}
+
+#pesanKosong {
+    font-size: 18px;
+    color: #a62525;
+    margin-top: 20px;
+}
+
+
+.daftar-mobil {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 28px;
+    text-align: left;
+}
+
+.kartu-mobil {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #edf0f5;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(30, 41, 59, 0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.kartu-mobil:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(30, 41, 59, 0.12);
+}
+
+.kartu-mobil img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background: #e2e8f0;
+}
+
+.info-mobil {
+    padding: 20px;
+}
+
+.info-mobil h3 {
+    margin-bottom: 8px;
+    color: #43101c;
+}
+
+.info-mobil p {
+    margin-bottom: 10px;
+}
+
+.harga {
+    color: #a62525;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.harga span {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.kartu-mobil .tombol {
+    margin: 8px 0 0;
+}
+
+input, select, button {
+    font: inherit;
+}
+
+:focus-visible {
+    outline: 3px solid #ffb347;
+    outline-offset: 3px;
+}
+
+
+.halaman-pemesanan {
+    max-width: 760px;
+    margin: 45px auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #edf0f5;
+    box-shadow: 0 8px 30px rgba(30, 41, 59, 0.07);
+}
+
+.booking-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.label-premium {
+    color: #e67e22;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.booking-heading h2 {
+    color: #a62525;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.booking-heading p:last-child {
+    color: #64748b;
+    margin: 22px 0 18px;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #1e293b;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: white;
+    color: #532424;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #a62525;
+    box-shadow: 0 0 0 3px rgba(166, 37, 37, 0.1);
+}
+
+#formPemesanan hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 30px 0;
+}
+
+
+.ringkasan-harga {
+    margin: 30px 0 22px;
+    padding: 22px;
+    background-color: #fff8f5;
+    border: 1px solid #f0ded7;
+    border-radius: 12px;
+}
+
+.ringkasan-harga h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #43101c;
+}
+
+.baris-harga,
+.baris-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 15px;
+}
+
+.baris-harga {
+    color: #81484d;
+}
+
+.baris-harga strong {
+    color: #53242d;
+    text-align: right;
+}
+
+.baris-total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #43101c;
+    padding-top: 14px;
+    margin-bottom: 0;
+    border-top: 1px solid #e8d2ca;
+}
+
+
+.tombol-booking {
+    width: 100%;
+    padding: 15px;
+    background-color: #a62525;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tombol-booking:hover {
+    background-color: #7d1724;
+    transform: translateY(-2px);
+}
+
+#pesanForm {
+    text-align: center;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .hero {
+        padding: 75px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .daftar-keunggulan {
+        grid-template-columns: 1fr;
+    }
+
+    .katalog {
+        padding: 45px 5%;
+    }
+
+    .daftar-mobil {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .halaman-pemesanan {
+        margin: 30px 20px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 22px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 60px 18px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .keunggulan {
+        padding: 45px 5%;
+    }
+
+    .keunggulan h2 {
+        font-size: 26px;
+    }
+
+    .filter-mobil {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .filter-mobil input,
+    .filter-mobil select {
+        max-width: none;
+    }
+
+    .daftar-mobil {
+        grid-template-columns: 1fr;
+    }
+
+    .kartu-mobil img {
+        height: 220px;
+    }
+
+    .halaman-pemesanan {
+        margin: 25px 14px;
+        padding: 22px 18px;
+    }
+
+    .booking-heading h2 {
+        font-size: 26px;
+    }
+
+    .ringkasan-harga {
+        padding: 18px;
+    }
+
+    .baris-total {
+        font-size: 16px;
+    }
+}
+
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+nav a[aria-current="page"] { background: rgba(255,255,255,.14); color: #ffcf87; }
+.form-group small, .catatan-form { color: #64748b; font-size: 13px; }
+.pesan-sukses, .pesan-gagal { padding: 12px 14px; border-radius: 8px; font-weight: 600; }
+.pesan-sukses { color: #166534; background: #f0fdf4; border: 1px solid #bbf7d0; }
+.pesan-gagal { color: #991b1b; background: #fef2f2; border: 1px solid #fecaca; }
+#tombolBooking:disabled { opacity: .65; cursor: wait; transform: none; }
+.pesan-error { max-width: 900px; margin: 50px auto; padding: 35px 6%; text-align: center; }
+.pesan-error h2 { color: #a62525; margin-bottom: 12px; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; } }
